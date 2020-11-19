@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from 'react';
+import "bootstrap/dist/css/bootstrap.min.css";
+import './styles/app.css';
+import MovieList from './components/MovieList';
+import MovieListHead from './components/MovieListHead';
 
-function App() {
+// import api from './services/api';
+import SearchBox from './components/SearchBox';
+
+const App = () => {
+  const [movies, setMovies] = useState([]);
+  const [search, setSearch] = useState('');
+
+  const handleMovieRequest = async() => {
+    const url = 'http://www.omdbapi.com/?s=rambo&apikey=d1a32bdb';
+    const response = await fetch(url);
+    const responseJson = await response.json();
+
+    setMovies(responseJson.Search);
+  }
+
+  useEffect(() => {
+    handleMovieRequest()    
+  }, [])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container-fluid movie-app">
+      <div className="row d-flex align-items-center mt-4 mb-4">
+        <MovieListHead heading='Movies' />
+        <SearchBox />
+      </div>
+      <div className="row">
+        <MovieList movies={movies} />
+      </div>      
     </div>
-  );
+  )
 }
 
 export default App;
