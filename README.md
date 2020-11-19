@@ -9,19 +9,19 @@
 <h1 align="center">Movie App</h1>
 
 <p align="center">
-  <img alt="Github top language" src="https://img.shields.io/github/languages/top/fabramosdev/movie-app?color=56BEB8">
+  <img alt="Github top language" src="https://img.shields.io/github/languages/top/fabramosdev/movie-search?color=56BEB8">
 
-  <img alt="Github language count" src="https://img.shields.io/github/languages/count/fabramosdev/movie-app?color=56BEB8">
+  <img alt="Github language count" src="https://img.shields.io/github/languages/count/fabramosdev/movie-search?color=56BEB8">
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/fabramosdev/movie-app?color=56BEB8">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/fabramosdev/movie-search?color=56BEB8">
 
-  <img alt="License" src="https://img.shields.io/github/license/fabramosdev/movie-app?color=56BEB8">
+  <img alt="License" src="https://img.shields.io/github/license/fabramosdev/movie-search?color=56BEB8">
 
-  <!-- <img alt="Github issues" src="https://img.shields.io/github/issues/fabramosdev/movie-app?color=56BEB8" /> -->
+  <!-- <img alt="Github issues" src="https://img.shields.io/github/issues/fabramosdev/movie-search?color=56BEB8" /> -->
 
-  <!-- <img alt="Github forks" src="https://img.shields.io/github/forks/fabramosdev/movie-app?color=56BEB8" /> -->
+  <!-- <img alt="Github forks" src="https://img.shields.io/github/forks/fabramosdev/movie-search?color=56BEB8" /> -->
 
-  <!-- <img alt="Github stars" src="https://img.shields.io/github/stars/fabramosdev/movie-app?color=56BEB8" /> -->
+  <!-- <img alt="Github stars" src="https://img.shields.io/github/stars/fabramosdev/movie-search?color=56BEB8" /> -->
 </p>
 
 <!-- Status -->
@@ -72,10 +72,10 @@ Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) an
 
 ```bash
 # Clone this project
-$ git clone https://github.com/fabramosdev/movie-app
+$ git clone https://github.com/fabramosdev/movie-search
 
 # Access
-$ cd movie-app
+$ cd movie-search
 
 # Install dependencies
 $ yarn
